@@ -1,4 +1,7 @@
  function add(){
      console.log(add)
  }
-function 
+function tima(){
+
+}
+console.log(123)
