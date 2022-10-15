@@ -1,32 +1,24 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+  <div>
+    <router-view></router-view>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+// import { getAllChannelsAPI } from '@/api/index.js'
+// try+cath 来捕获awaittong同步代码错误
+export default {
+  // async created () {
+  //   try {
+  //     const res = await getAllChannelsAPI()
+  //     console.log(res)
+  //   } catch (err) {
+  //     console.dir(err)
+  //   }
+  // }
 }
+</script>
 
-nav {
-  padding: 30px;
+<style lang="scss" scoped>
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
 </style>
